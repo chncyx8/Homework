@@ -71,6 +71,7 @@ namespace Homework
 
                 Console.WriteLine("Press any key to exit..");
                 Console.ReadKey(true);
+
             }
             catch
             {
@@ -140,6 +141,138 @@ namespace Homework
        *
        */
 
+
+        public static void Firstsum(int n)
+        {
+            int sum = 0;
+            try
+            {
+                Console.WriteLine("Please enter a number: ");
+                n = int.Parse(Console.ReadLine());
+                for (int i = 1; i <= n; i++)
+                {
+                    sum += i;
+                }
+                Console.WriteLine("Sum = " + sum);
+
+                Console.WriteLine("Press any key to exit..");
+                Console.ReadKey(true);
+            } 
+            catch
+            {
+                Console.WriteLine("Exception occured while computing Firstsum()");
+            }
+
+        }
+        /*
+        * n -the number user input, integer(int)
+        * 
+        * summary: This method calculates the sum of first n natural numbers of number n.
+        * For example, n=21, sum=231.
+        * 
+        * Tip: Use for loop to iterate first n numbers of number n, and add them to sum one by one. 
+        *
+        * returns      : result
+        * return type  : void
+        *
+        */
+
+
+        public static void PrintTriangle1(int n)
+        {
+            try
+            {
+                Console.WriteLine("Please enter a number: ");
+                n = int.Parse(Console.ReadLine());
+                for (int i = 1; i <= n; i++)
+                {
+                    for (int j = 1; j <= i; j++)
+                    {
+                        Console.Write("*");
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine("Press any key to exit..");
+                Console.ReadKey(true);
+
+            }
+            catch
+            {
+                Console.WriteLine("Exception occured while computing PrintTriangle1()");
+            }
+        }
+        /*
+        * n -the number user input, integer(int)
+        * 
+        * summary: This method display the triangle * pattern according to number n.
+        * For example, // Input n=5
+        // Output
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        * 
+        * Tip: Use nested for loop achieve it, the outter loop controls number of lines,
+        * the inner loop controls star printing. 
+        *
+        * returns      : N/A
+        * return type  : void
+        *
+        */
+
+
+        public static void PrintTriangle2(int n)
+        {
+            try
+            {
+                Console.WriteLine("Please enter a number: ");
+                n = int.Parse(Console.ReadLine());
+                for (int i = n; i > 0; i--)
+                {
+                    for (int j = 0; j <= i; j++)
+                    {
+                        Console.Write(" ");
+                    }
+                    for (int j = 0; j <= n - i; j++)
+                    {
+                        Console.Write("*");
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+
+                Console.WriteLine("Press any key to exit..");
+                Console.ReadKey(true);
+
+            }
+            catch
+            {
+                Console.WriteLine("Exception occured while computing PrintTriangle2()");
+            }
+        }
+        /*
+        * n -the number user input, integer(int)
+        * 
+        * summary: This method display the triangle * pattern according to number n.
+        * For example, // Input n=5
+        // Output
+        //     *
+        //    **
+        //   ***
+        //  ****
+        // *****
+        * 
+        * Tip: Use nested for loop achieve it, the outter loop controls number of lines,
+        * the inner loops control star printing, there are two inner loops, 
+        * one for printing spaces, one for printing stars, in the beginning, we print n-1 spaces
+        * and one star, and the number of stars keep raising in the following lines. 
+        * This is how the method works.
+        *
+        * returns      : N/A
+        * return type  : void
+        *
+        */
 
     }
 }
