@@ -62,11 +62,11 @@ namespace Homework
                 n = int.Parse(Console.ReadLine());
                 if (n % 2 == 0)
                 {
-                    Console.WriteLine("{0} is even. ");
+                    Console.WriteLine("This number is even. ");
                 }
                 else
                 {
-                    Console.WriteLine("{0} is odd. ");
+                    Console.WriteLine("This number is odd. ");
                 }
 
                 Console.WriteLine("Press any key to exit..");
